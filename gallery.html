@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>T-DANES</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <h3 class="logo">T-DANES</h3>
+    <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="themembers.html">The Mambers</a>
+    </div>
+</nav>
+
+<div class="gallery">
+    <h2>🎀🎀🎀</h2>
+
+    <div class="gallery-grid">
+    <img src="foto1.jpeg" onclick="openImg(this)">
+    <img src="foto2.jpeg" onclick="openImg(this)">
+    <img src="foto3.jpeg" onclick="openImg(this)">
+    <img src="foto4.jpeg" onclick="openImg(this)">
+    <img src="foto5.jpeg" onclick="openImg(this)">
+    <img src="foto6.jpeg" onclick="openImg(this)">
+    <img src="foto7.jpeg" onclick="openImg(this)">
+    <img src="foto8.jpeg" onclick="openImg(this)">
+    <img src="foto9.jpeg" onclick="openImg(this)">
+    <img src="foto10.jpeg" onclick="openImg(this)">
+    <img src="foto11.jpeg" onclick="openImg(this)">
+    <img src="foto12.jpeg" onclick="openImg(this)">
+    <img src="foto13.jpeg" onclick="openImg(this)">
+    <img src="foto14.jpeg" onclick="openImg(this)">
+    <img src="foto14.jpeg" onclick="openImg(this)">
+    <img src="foto15.jpeg" onclick="openImg(this)">
+    <img src="foto16.jpeg" onclick="openImg(this)">
+    <img src="foto17.jpeg" onclick="openImg(this)">
+    <img src="foto18.jpeg" onclick="openImg(this)">
+    <img src="foto19.jpeg" onclick="openImg(this)">
+    <img src="foto20.jpeg" onclick="openImg(this)">
+    
+</div>
+
+<div class="lightbox" id="lightbox" onclick="closeImg()">
+    <span class="close">&times;</span>
+    <img id="lightbox-img">
+</div>
+</div>
+
+<div class="next-page">
+    <a href="struktur.html" class="btn">The Members →</a>
+</div>
+<script>
+function openImg(img) {
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("lightbox-img").src = img.src;
+}
+
+function closeImg() {
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+</body>
+</html>
